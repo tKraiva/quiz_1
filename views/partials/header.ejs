@@ -1,7 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Express Demo</title>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Users/TakundaRaiva/TakundaRaiva/CodeCore/quiz_1/public/css/stylesheet.css"/>
   </head>
   <body>
+   <div class="imgcontainer">
+    <img src="/Users/TakundaRaiva/TakundaRaiva/CodeCore/quiz_1/assets/hen.svg"  class="avatar">
+  </div>
+  <nav>
+    <a href="/">Home Page</a>
+    |
+    <a href="/contact_us">Contact Us</a>
+    |
+    <% if (username) { %>
+      <span>
+        <%= username %>
+      </span>
+      <form action="/sign_out" method="POST">
+        <input type="submit" value="Sign Out"/>
+      </form>
+    <% } else { %>
+    <a href="/sign_in">Sign In</a>
+    <% } %>
+  </nav>
