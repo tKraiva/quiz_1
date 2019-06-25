@@ -1,0 +1,10 @@
+<%- include("../views/partials/header") %>
+
+<% for (let cluck of clucks) { %> 
+  <div>
+    <h2><%= clucks.id %> – <%= clucks.image_url %></h2>
+    <p><%= clucks.content %></p>
+  </div>
+<% } %>
+
+<%- include("../views/partials/footer") %>
