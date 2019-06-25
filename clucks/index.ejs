@@ -1,0 +1,12 @@
+<%- include("../views/partials/header") %>
+
+<% for (let cluck of clucks) { %> 
+
+  <div class="form">
+    <h2><%=cluck.content  %></h2>
+    <p></p>
+    <img src="<%= cluck.image_url %> " />
+  </div>
+<% } %>
+
+<%- include("../views/partials/footer") %>

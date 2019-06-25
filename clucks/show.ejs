@@ -1,0 +1,10 @@
+<%- include("../views/partials/header") %>
+  <div>
+    <h2><%= clucks.id %> – <%= clucks.image_url %></h2>
+    <p><%= clucks.content %></p>
+    <form action="/clucks/<%= clucks.id %>" method="POST">
+      <input type="hidden" name="_method" value="DELETE"/>
+      <input type="submit" value="Delete"/>
+    </form>
+  </div>
+<%- include("../views/partials/footer") %>
