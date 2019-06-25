@@ -1,9 +1,11 @@
 <%- include("../views/partials/header") %>
 
 <% for (let cluck of clucks) { %> 
-  <div>
-    <h2><%= clucks.id %> – <%= clucks.image_url %></h2>
-    <p><%= clucks.content %></p>
+
+  <div class="form">
+    <h2><%=cluck.content  %></h2>
+    <p></p>
+    <img src="<%= cluck.image_url %> " />
   </div>
 <% } %>
 
