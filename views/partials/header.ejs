@@ -13,7 +13,15 @@
   <nav>
     <a href="/">Home Page</a>
     |
-    <a href="/contact_us">Contact Us</a>
+    <% if (username) { %>
+      <span>
+        <a href="/clucks/new">Cluck!</a>
+      </span>
+      
+    <% } else { %>
+      <a href="/sign_in">Cluck!</a>
+    <% } %>
+   
     |
     <% if (username) { %>
       <span>
